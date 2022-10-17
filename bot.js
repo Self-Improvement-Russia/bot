@@ -1,12 +1,31 @@
 // Require the necessary discord.js classes
-const { Client, GatewayIntentBits, Collection } = require('discord.js');
+const { Client, Collection, IntentsBitField } = require('discord.js');
 const { token } = require('./config.json');
 const fs = require('node:fs');
 const path = require('node:path');
 
+const intents = new IntentsBitField();
+intents.add(
+    IntentsBitField.Flags.Guilds,
+    IntentsBitField.Flags.GuildMembers,
+    // IntentsBitField.Flags.GuildBans,
+    IntentsBitField.Flags.GuildEmojisAndStickers,
+    // IntentsBitField.Flags.GuildIntegrations,
+    // IntentsBitField.Flags.GuildWebhooks,
+    // IntentsBitField.Flags.GuildInvites,
+    // IntentsBitField.Flags.GuildVoiceStates,
+    // IntentsBitField.Flags.GuildPresences,
+    IntentsBitField.Flags.GuildMessages,
+    IntentsBitField.Flags.GuildMessageReactions,
+    // IntentsBitField.Flags.GuildMessageTyping,
+    // IntentsBitField.Flags.GuildScheduledEvents,
+    IntentsBitField.Flags.MessageContent,
+    // IntentsBitField.Flags.DirectMessageReactions,
+    // IntentsBitField.Flags.DirectMessageTyping,
+    IntentsBitField.Flags.DirectMessages);
 
 // Create a new client instance
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ intents: intents });
 
 // Initialize commands
 client.commands = new Collection();
@@ -35,5 +54,3 @@ for (const file of eventFiles) {
 
 // Login to Discord with your client's token
 client.login(token).then(() => console.log('Logging in...'));
-
-module.exports.db = require('./database.js');
