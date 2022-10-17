@@ -1,10 +1,10 @@
 const { SlashCommandBuilder } = require('discord.js');
 
-
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('user')
-		.setDescription('Replies with user info.'),
+		.setDescription('Replies with user info.')
+        .setDMPermission(true),
 	async execute(interaction) {
 		const { db, initUser, DataError } = require('../database.js');
 		let karma;

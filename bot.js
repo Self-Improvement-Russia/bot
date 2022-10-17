@@ -19,7 +19,7 @@ intents.add(
     IntentsBitField.Flags.GuildMessageReactions,
     // IntentsBitField.Flags.GuildMessageTyping,
     // IntentsBitField.Flags.GuildScheduledEvents,
-    IntentsBitField.Flags.MessageContent,
+    // IntentsBitField.Flags.MessageContent,
     // IntentsBitField.Flags.DirectMessageReactions,
     // IntentsBitField.Flags.DirectMessageTyping,
     IntentsBitField.Flags.DirectMessages);
