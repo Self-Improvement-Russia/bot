@@ -1,23 +1,23 @@
 const { JsonDB, Config, DataError } = require('node-json-db');
 
-const db = new JsonDB(new Config("database.json", true, true, '/'));
+const db = new JsonDB(new Config('database.json', true, true, '/'));
 
 function initUser(user) {
-    db.push("/users", {
-        [user.id]: {
-            karma: {
-                value: 0,
-                changedAt: (new Date()).toUTCString()
-            }
-        }
-    })
+	db.push('/users', {
+		[user.id]: {
+			karma: {
+				value: 0,
+				changedAt: (new Date()).toUTCString(),
+			},
+		},
+	});
 }
 
 module.exports = {
-    "db": db,
-    "initUser": initUser,
-    "dataError": DataError
-}
+	'db': db,
+	'initUser': initUser,
+	'dataError': DataError,
+};
 
 /*
 // Pushing the data into the database

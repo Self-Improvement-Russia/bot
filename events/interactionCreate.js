@@ -6,7 +6,7 @@ module.exports = {
 		if (!command) return;
 
 		try {
-			console.log(`${interaction.user.tag} triggered /${interaction.commandName} interaction in ${interaction.channel ? "#"+interaction.channel.name : "DMs"}`);
+			console.log(`${interaction.user.tag} triggered /${interaction.commandName} interaction in ${interaction.channel ? '#' + interaction.channel.name : 'DMs'}`);
 			await command.execute(interaction);
 		} catch (error) {
 			console.error(error);

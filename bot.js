@@ -6,23 +6,23 @@ const path = require('node:path');
 
 const intents = new IntentsBitField();
 intents.add(
-    IntentsBitField.Flags.Guilds,
-    IntentsBitField.Flags.GuildMembers,
-    // IntentsBitField.Flags.GuildBans,
-    IntentsBitField.Flags.GuildEmojisAndStickers,
-    // IntentsBitField.Flags.GuildIntegrations,
-    // IntentsBitField.Flags.GuildWebhooks,
-    // IntentsBitField.Flags.GuildInvites,
-    // IntentsBitField.Flags.GuildVoiceStates,
-    // IntentsBitField.Flags.GuildPresences,
-    IntentsBitField.Flags.GuildMessages,
-    IntentsBitField.Flags.GuildMessageReactions,
-    // IntentsBitField.Flags.GuildMessageTyping,
-    // IntentsBitField.Flags.GuildScheduledEvents,
-    // IntentsBitField.Flags.MessageContent,
-    // IntentsBitField.Flags.DirectMessageReactions,
-    // IntentsBitField.Flags.DirectMessageTyping,
-    IntentsBitField.Flags.DirectMessages);
+	IntentsBitField.Flags.Guilds,
+	IntentsBitField.Flags.GuildMembers,
+	// IntentsBitField.Flags.GuildBans,
+	IntentsBitField.Flags.GuildEmojisAndStickers,
+	// IntentsBitField.Flags.GuildIntegrations,
+	// IntentsBitField.Flags.GuildWebhooks,
+	// IntentsBitField.Flags.GuildInvites,
+	// IntentsBitField.Flags.GuildVoiceStates,
+	// IntentsBitField.Flags.GuildPresences,
+	IntentsBitField.Flags.GuildMessages,
+	IntentsBitField.Flags.GuildMessageReactions,
+	// IntentsBitField.Flags.GuildMessageTyping,
+	// IntentsBitField.Flags.GuildScheduledEvents,
+	// IntentsBitField.Flags.MessageContent,
+	// IntentsBitField.Flags.DirectMessageReactions,
+	// IntentsBitField.Flags.DirectMessageTyping,
+	IntentsBitField.Flags.DirectMessages);
 
 // Create a new client instance
 const client = new Client({ intents: intents });
