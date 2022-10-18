@@ -1,11 +1,12 @@
+'use strict';
 const { JsonDB, Config, DataError } = require('node-json-db');
 
 const db = new JsonDB(new Config('database.json', true, true, '/'));
 
-function initUser(user) {
-	db.push('/users', {
+async function initUser(user) {
+	await db.push('/users', {
 		[user.id]: {
-			karma: {
+			reputation: {
 				value: 0,
 				changedAt: (new Date()).toUTCString(),
 			},

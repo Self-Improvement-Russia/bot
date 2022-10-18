@@ -1,3 +1,4 @@
+'use strict';
 const { reactionAction } = require('../events.js');
 
 module.exports = {

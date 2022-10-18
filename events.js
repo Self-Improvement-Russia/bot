@@ -1,17 +1,18 @@
+'use strict'
 module.exports.reactionAction = async function reactionAction(interaction, value) {
-	const { db, initUser, dataError } = require('../database.js');
-	let karma;
+	const { db, initUser, dataError } = require('./database.js');
+	let reputation;
 	try {
-		karma = await db.getData(`/users/${interaction.message.author.id}/karma/value`);
+		reputation = await db.getData(`/users/${interaction.message.author.id}/reputation/value`);
 	} catch (e) {
-		(e instanceof dataError) ? (initUser(interaction.message.author.id)) : (() => {
+		(e instanceof dataError) ? (await initUser(interaction.message.author.id)) : (() => {
 			throw(e);
 		});
-		karma = 0;
+		reputation = 0;
 	}
-	await db.push(`/users/${interaction.message.author.id}/karma`, {
-		value: karma + value,
+	await db.push(`/users/${interaction.message.author.id}/reputation`, {
+		value: reputation + value,
 		changedAt: (new Date()).toUTCString(),
 	});
-	console.log(`${value > 0 ? '+' + value : value} karma to ${interaction.message.author.tag}`);
+	console.log(`${value > 0 ? '+' + value : value} rep to ${interaction.message.author.tag}`);
 };

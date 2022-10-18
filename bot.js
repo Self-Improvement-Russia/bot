@@ -1,3 +1,4 @@
+'use strict';
 // Require the necessary discord.js classes
 const { Client, Collection, IntentsBitField } = require('discord.js');
 const { token } = require('./config.json');
