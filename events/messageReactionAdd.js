@@ -1,9 +1,10 @@
 'use strict';
+const { Events } = require('discord.js');
 const { reactionAction } = require('../events.js');
 
 module.exports = {
-	name: 'messageReactionAdd',
-	async execute(interaction) {
-		await reactionAction(interaction, +1);
+	name: Events.MessageReactionAdd,
+	async execute(reaction, member) {
+		await reactionAction(reaction, member, 1);
 	},
 };

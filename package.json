@@ -1,6 +1,6 @@
 {
   "name": "self-improvement-russia-bot",
-  "version": "0.2",
+  "version": "0.3",
   "description": "A bot for russian self-improvement server",
   "main": "bot.js",
   "scripts": {
