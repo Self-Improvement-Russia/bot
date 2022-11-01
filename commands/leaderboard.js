@@ -7,7 +7,7 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('leaderboard')
 		.setDescription('Replies with leaderboard')
-		.setDMPermission(false),
+		.setDMPermission(true),
 	async execute(interaction) {
 		await interaction.deferReply();
 		let row = new ActionRowBuilder().addComponents(Object.values(buttons)), message;
@@ -29,11 +29,12 @@ module.exports = {
 			}
 
 			switch (i.customId) {
-			case 'firstPage': currentPage = 0; break;
-			case 'prevPage': currentPage--; break;
-			case 'nextPage': currentPage++; break;
-			case 'lastPage': currentPage = leaderboard.embeds.length - 1; break;
-			default: await interaction.deleteReply(); return}
+				case 'firstPage': currentPage = 0; break;
+				case 'prevPage': currentPage--; break;
+				case 'nextPage': currentPage++; break;
+				case 'lastPage': currentPage = leaderboard.embeds.length - 1; break;
+				default: await interaction.deleteReply(); return
+			}
 
 			buttons['prevPage'].setDisabled(currentPage === 0);
 			buttons['nextPage'].setDisabled(currentPage === leaderboard.embeds.length - 1);

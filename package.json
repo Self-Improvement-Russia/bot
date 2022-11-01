@@ -1,11 +1,11 @@
 {
   "name": "self-improvement-russia-bot",
-  "version": "0.3",
+  "version": "0.4.0",
   "description": "A bot for russian self-improvement server",
   "main": "bot.js",
   "scripts": {
-    "deploy": "node deploy-commands.js && exit 1",
-    "start": "clear ; node --trace-warnings bot.js && exit 1"
+    "deploy": "node deploy-commands.js && exit 0",
+    "start": "clear ; node --trace-warnings bot.js && exit 0"
   },
   "author": "P3rf3cT",
   "license": "ISC",
