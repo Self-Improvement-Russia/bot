@@ -1,6 +1,5 @@
+build
 node_modules
-config.json
-database.json
-backupDatabase.json
-.fleet
-.vscode
+botConfig.json
+.vscode/*
+!.vscode/extensions.json
