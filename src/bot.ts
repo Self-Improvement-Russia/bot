@@ -27,12 +27,10 @@ export class ClientWithCommands extends Client {
 const intents = [
 	GatewayIntentBits.Guilds,
 	GatewayIntentBits.GuildMembers,
-	GatewayIntentBits.GuildEmojisAndStickers,
 	GatewayIntentBits.GuildMessages,
 	GatewayIntentBits.GuildMessageReactions,
 	GatewayIntentBits.DirectMessages,
-	GatewayIntentBits.GuildPresences,
-	GatewayIntentBits.MessageContent
+	GatewayIntentBits.GuildPresences
 	/*
   GatewayIntentBits.GuildBans, 
   GatewayIntentBits.GuildMessageTyping, 
