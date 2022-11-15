@@ -14,7 +14,7 @@ import {
 	ButtonInteraction,
 	SelectMenuInteraction
 } from "discord.js";
-import { token, guildId, infoChannelId } from "../botConfig.json";
+import { token, guildId, infoChannelId } from "./botConfig.json";
 const { menu } = require("./commands/menu");
 
 export class ClientWithCommands extends Client {

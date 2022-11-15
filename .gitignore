@@ -1,5 +1,5 @@
 build
 node_modules
-botConfig.json
+src/botConfig.json
 .vscode/*
 !.vscode/extensions.json

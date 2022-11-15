@@ -20,7 +20,7 @@ import {
 	CommandInteractionOptionResolver,
 	SelectMenuInteraction
 } from "discord.js";
-import { infoChannelId, infoMessageId, guildId } from "../../botConfig.json";
+import { infoChannelId, infoMessageId, guildId } from "../botConfig.json";
 
 module.exports = {
 	data: new SlashCommandBuilder()

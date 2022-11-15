@@ -1,6 +1,6 @@
 import { Interaction, TextBasedChannel } from "discord.js";
 import { ClientWithCommands } from "../bot";
-import { feedbackChannelId } from "../../botConfig.json";
+import { feedbackChannelId } from "../botConfig.json";
 const { menu } = require("../commands/menu");
 
 module.exports = {

@@ -1,5 +1,5 @@
 import { Events, MessageReaction, User } from "discord.js";
-import { ownerId } from "../../botConfig.json";
+import { ownerId } from "../botConfig.json";
 
 module.exports = {
 	name: Events.MessageReactionAdd,

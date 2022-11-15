@@ -1,7 +1,7 @@
 {
   "name": "self-improvement-russia-bot",
   "description": "A bot for russian self-improvement server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./build/bot.js",
   "author": "P3rf3cT",
   "license": "ISC",
