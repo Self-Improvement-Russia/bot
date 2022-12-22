@@ -145,7 +145,7 @@ const menu: {
 		mainMessage: {
 			embeds: [
 				new EmbedBuilder()
-					.setTitle("<a:_:1032911337543700560> Добро пожаловать на Self Improvement Russia!")
+					.setTitle("Добро пожаловать на Self Improvement Russia!")
 					.setColor(0x2f3136)
 					.setThumbnail("https://cdn.discordapp.com/icons/999969234425761913/0ad835fb41365c7e01376ff1f0b13837.png?size=4096")
 					.setDescription(
@@ -154,21 +154,21 @@ const menu: {
 							"обмениваться советами, слушать информативные мероприятия, получать обратную связь, оставаться подотчетными и **создавать значимую жизнь для себя и других**. " +
 							":muscle_tone1:\n\nНаши интерактивные кнопки, расположенные под этим сообщением, позволят вам ознакомиться с нашими правилами, " +
 							"получить краткое руководство по нашему сообществу, настроить свои роли и получить доступ к новым чатам, отправить нам отзыв, а также получить доступ к нашей **обширной и постоянно растущей библиотеке знаний в Notion!** " +
-							"Приятного вам пребывания, и не забудьте поздороваться с нами в <#1031026435743289418>\n"
+							"Приятного вам пребывания, и не забудьте поздороваться с нами в <#999969235314954332>"
 					)
-					.setFooter({ text: "Перманентная ссылка на сервер: https://discord.gg/wJkwr4PRFR" })
+					.setFooter({ text: "Перманентная ссылка на сервер: https://discord.gg/wJkwr4PRFP" })
 			],
 			components: [
 				new ActionRowBuilder().addComponents([
-					new ButtonBuilder().setLabel("Правила").setCustomId("rules").setStyle(ButtonStyle.Success).setEmoji("<:bookopen:1036213313534693408>"),
-					new ButtonBuilder().setLabel("Руководство").setCustomId("guide").setStyle(ButtonStyle.Primary).setEmoji("<:signalt:1036213325740134421>"),
-					new ButtonBuilder().setLabel("Роли").setCustomId("roles").setStyle(ButtonStyle.Primary).setEmoji("<:awardalt:1036213308266651718>"),
-					new ButtonBuilder().setLabel("Отзыв").setCustomId("feedback").setStyle(ButtonStyle.Secondary).setEmoji("<:commentaltmessage:1036213315132735588>"),
+					new ButtonBuilder().setLabel("Правила").setCustomId("rules").setStyle(ButtonStyle.Success).setEmoji("<:bookopen:1042704522449010759>"),
+					new ButtonBuilder().setLabel("Руководство").setCustomId("guide").setStyle(ButtonStyle.Primary).setEmoji("<:signalt:1042704534436315169>"),
+					new ButtonBuilder().setLabel("Роли").setCustomId("roles").setStyle(ButtonStyle.Primary).setEmoji("<:awardalt:1042704519655587860>"),
+					new ButtonBuilder().setLabel("Отзыв").setCustomId("feedback").setStyle(ButtonStyle.Secondary).setEmoji("<:commentaltmessage:1042704525921878037>"),
 					new ButtonBuilder()
 						.setLabel("Notion")
 						.setURL("https://gertsen.notion.site/Self-Improvement-Russia-d5f4aa0c936c4154a6863cdffca92c8f")
 						.setStyle(ButtonStyle.Link)
-						.setEmoji("<:notion:1036218194542723153>")
+						.setEmoji("<:notion:1042708214069866588>")
 				])
 			]
 		},
@@ -203,7 +203,7 @@ const menu: {
 			],
 			components: [
 				new ActionRowBuilder<ButtonBuilder>().addComponents([
-					new ButtonBuilder().setLabel("Начать").setCustomId("guide1").setStyle(ButtonStyle.Success).setEmoji("<:play:1036561087228817408>")
+					new ButtonBuilder().setLabel("Начать").setCustomId("guide1").setStyle(ButtonStyle.Success).setEmoji("<:play:1042704531835867217>")
 				])
 			],
 
@@ -225,8 +225,8 @@ const menu: {
 				],
 				components: [
 					new ActionRowBuilder<ButtonBuilder>().addComponents([
-						new ButtonBuilder().setCustomId("disabled").setStyle(ButtonStyle.Primary).setEmoji("<:angleleftb:1036213306844790834>").setDisabled(true),
-						new ButtonBuilder().setCustomId("guide2").setStyle(ButtonStyle.Primary).setEmoji("<:anglerightb:1036561819545915432>")
+						new ButtonBuilder().setCustomId("disabled").setStyle(ButtonStyle.Primary).setEmoji("<:angleleftb:1042704516241444904>").setDisabled(true),
+						new ButtonBuilder().setCustomId("guide2").setStyle(ButtonStyle.Primary).setEmoji("<:anglerightb:1042704518065950740>")
 					])
 				]
 			},
@@ -249,8 +249,8 @@ const menu: {
 				],
 				components: [
 					new ActionRowBuilder<ButtonBuilder>().addComponents([
-						new ButtonBuilder().setCustomId("guide1").setStyle(ButtonStyle.Primary).setEmoji("<:angleleftb:1036213306844790834>"),
-						new ButtonBuilder().setCustomId("guide3").setStyle(ButtonStyle.Primary).setEmoji("<:anglerightb:1036561819545915432>")
+						new ButtonBuilder().setCustomId("guide1").setStyle(ButtonStyle.Primary).setEmoji("<:angleleftb:1042704516241444904>"),
+						new ButtonBuilder().setCustomId("guide3").setStyle(ButtonStyle.Primary).setEmoji("<:anglerightb:1042704518065950740>")
 					])
 				]
 			},
@@ -275,8 +275,8 @@ const menu: {
 				],
 				components: [
 					new ActionRowBuilder<ButtonBuilder>().addComponents([
-						new ButtonBuilder().setCustomId("guide2").setStyle(ButtonStyle.Primary).setEmoji("<:angleleftb:1036213306844790834>"),
-						new ButtonBuilder().setCustomId("guideEnd").setStyle(ButtonStyle.Success).setEmoji("<:check:1036547387658874891>")
+						new ButtonBuilder().setCustomId("guide2").setStyle(ButtonStyle.Primary).setEmoji("<:angleleftb:1042704516241444904>"),
+						new ButtonBuilder().setCustomId("guideEnd").setStyle(ButtonStyle.Success).setEmoji("<:check:1042704524076388382>")
 					])
 				]
 			},
@@ -307,9 +307,9 @@ const menu: {
 			],
 			components: [
 				new ActionRowBuilder<ButtonBuilder>().addComponents([
-					new ButtonBuilder().setLabel("Округ").setCustomId("district").setStyle(ButtonStyle.Primary).setEmoji("<:mapmarker:1036213321294168074>"),
-					new ButtonBuilder().setLabel("Возраст").setCustomId("age").setStyle(ButtonStyle.Primary).setEmoji("<:13plus:1036213304982511666>"),
-					new ButtonBuilder().setLabel("Уведомления").setCustomId("notifications").setStyle(ButtonStyle.Primary).setEmoji("<:bell:1036213311441752097>")
+					new ButtonBuilder().setLabel("Округ").setCustomId("district").setStyle(ButtonStyle.Primary).setEmoji("<:mapmarker:1042704528899854346> "),
+					new ButtonBuilder().setLabel("Возраст").setCustomId("age").setStyle(ButtonStyle.Primary).setEmoji("<:13plus:1042704514416918569>"),
+					new ButtonBuilder().setLabel("Уведомления").setCustomId("notifications").setStyle(ButtonStyle.Primary).setEmoji("<:notifications:1042704520825802773>")
 				])
 			],
 
@@ -340,7 +340,7 @@ const menu: {
 							)
 					]),
 					new ActionRowBuilder<ButtonBuilder>().addComponents([
-						new ButtonBuilder().setLabel("Назад").setCustomId("backToRoles").setStyle(ButtonStyle.Secondary).setEmoji("<:angleleftb:1036213306844790834>")
+						new ButtonBuilder().setLabel("Назад").setCustomId("backToRoles").setStyle(ButtonStyle.Secondary).setEmoji("<:angleleftb:1042704516241444904>")
 					])
 				]
 			},
@@ -362,7 +362,7 @@ const menu: {
 						new ButtonBuilder().setLabel("18+").setCustomId("18+").setStyle(ButtonStyle.Primary).setEmoji("👨")
 					]),
 					new ActionRowBuilder<ButtonBuilder>().addComponents([
-						new ButtonBuilder().setLabel("Назад").setCustomId("backToRoles").setStyle(ButtonStyle.Secondary).setEmoji("<:angleleftb:1036213306844790834>")
+						new ButtonBuilder().setLabel("Назад").setCustomId("backToRoles").setStyle(ButtonStyle.Secondary).setEmoji("<:angleleftb:1042704516241444904>")
 					])
 				]
 			},
@@ -382,21 +382,21 @@ const menu: {
 				],
 				components: [
 					new ActionRowBuilder<ButtonBuilder>().addComponents([
-						new ButtonBuilder().setLabel("Новости").setCustomId("news").setStyle(ButtonStyle.Primary).setEmoji("<:news:1036213322799927377>"),
-						new ButtonBuilder().setLabel("Лента").setCustomId("feed").setStyle(ButtonStyle.Primary).setEmoji("<:rss:1036213324200824892>"),
-						new ButtonBuilder().setLabel("События").setCustomId("events").setStyle(ButtonStyle.Primary).setEmoji("<:hourglass:1036213319935213658>"),
+						new ButtonBuilder().setLabel("Новости").setCustomId("news").setStyle(ButtonStyle.Primary).setEmoji("<:news:1042704530355261490>"),
+						new ButtonBuilder().setLabel("Лента").setCustomId("feed").setStyle(ButtonStyle.Primary).setEmoji("<:rss:1042704533236752394>"),
+						new ButtonBuilder().setLabel("События").setCustomId("events").setStyle(ButtonStyle.Primary).setEmoji("<:events:1042704527452819456>"),
 						new ButtonBuilder()
 							.setLabel("Международные События")
 							.setCustomId("international")
 							.setStyle(ButtonStyle.Primary)
-							.setEmoji("<:globe:1036213318240714813>")
+							.setEmoji("<:globe:1043623333306056725>")
 					]),
 					new ActionRowBuilder<ButtonBuilder>().addComponents([
-						new ButtonBuilder().setLabel("Назад").setCustomId("backToRoles").setStyle(ButtonStyle.Secondary).setEmoji("<:angleleftb:1036213306844790834>"),
+						new ButtonBuilder().setLabel("Назад").setCustomId("backToRoles").setStyle(ButtonStyle.Secondary).setEmoji("<:angleleftb:1042704516241444904>"),
 						new ButtonBuilder()
 							.setLabel("Adonis.House")
 							.setStyle(ButtonStyle.Link)
-							.setEmoji("<:adonishouse:1036218192663674941>")
+							.setEmoji("<:adonishouse:1043624032555241514>")
 							.setURL("https://discord.gg/mWzZBNwqz6")
 					])
 				]
