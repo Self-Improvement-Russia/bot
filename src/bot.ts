@@ -14,7 +14,7 @@ import {
 	ButtonInteraction,
 	SelectMenuInteraction
 } from "discord.js";
-import { token, guildId, infoChannelId } from "./botConfig.json";
+import { guildId, infoChannelId } from "./botConfig.json";
 const { menu } = require("./commands/menu");
 
 export class ClientWithCommands extends Client {
@@ -23,6 +23,8 @@ export class ClientWithCommands extends Client {
 	}
 	commands: Collection<string, { data: SlashCommandBuilder; execute: (interaction: Interaction) => void }> = new Collection();
 }
+
+const token = process.env.DISCORD_TOKEN as string;
 
 const intents = [
 	GatewayIntentBits.Guilds,

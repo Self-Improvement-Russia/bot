@@ -1,8 +1,9 @@
 import { REST, Routes } from "discord.js";
-import { appId, guildId, token } from "./botConfig.json";
+import { appId, guildId } from "./botConfig.json";
 import fs from "node:fs";
 import path from "node:path";
 
+const token = process.env.DISCORD_TOKEN as string;
 const commands = [];
 const commandFiles = fs.readdirSync(path.join(__dirname, "commands")).filter((file: string) => file.endsWith(".js"));
 for (const file of commandFiles) {

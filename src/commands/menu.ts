@@ -5,7 +5,7 @@ import {
 	ActionRowBuilder,
 	ButtonBuilder,
 	ButtonStyle,
-	SelectMenuBuilder,
+	StringSelectMenuBuilder,
 	ModalBuilder,
 	TextInputStyle,
 	TextInputBuilder,
@@ -18,9 +18,9 @@ import {
 	GuildMemberRoleManager,
 	GuildMember,
 	CommandInteractionOptionResolver,
-	SelectMenuInteraction
+	StringSelectMenuInteraction
 } from "discord.js";
-import { infoChannelId, infoMessageId, guildId } from "../botConfig.json";
+import { infoChannelId, infoMessageId } from "../botConfig.json";
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -41,7 +41,7 @@ module.exports = {
 };
 
 async function giveRole(i: MessageComponentInteraction, roleId: string) {
-	if ((!i.isButton() && !i.isSelectMenu) || !i.inGuild()) return;
+	if ((!i.isButton() && !i.isStringSelectMenu) || !i.inGuild()) return;
 	const memberRoleManager = i.member.roles as GuildMemberRoleManager;
 	const guildRoleManager = i.guild!.roles as RoleManager;
 	const member = i.member as GuildMember;
@@ -84,7 +84,7 @@ const menu: {
 		replyMsg: InteractionReplyOptions;
 	};
 } = {
-	actions: async (inter: ButtonInteraction | SelectMenuInteraction) => {
+	actions: async (inter: ButtonInteraction | StringSelectMenuInteraction) => {
 		switch (inter.customId) {
 			// Main Menu
 			case "feedback":
@@ -324,8 +324,8 @@ const menu: {
 						)
 				],
 				components: [
-					new ActionRowBuilder<SelectMenuBuilder>().addComponents([
-						new SelectMenuBuilder()
+					new ActionRowBuilder<StringSelectMenuBuilder>().addComponents([
+						new StringSelectMenuBuilder()
 							.setCustomId("selectDistrict")
 							.setPlaceholder("Ничего не выбрано")
 							.addOptions(
